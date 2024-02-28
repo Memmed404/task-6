@@ -1,0 +1,226 @@
+$font: "Montserrat", sans-serif;
+$primary-text-color: #23a6f0;
+$second-text-color: #737373;
+$primary-color: #23a6f0;
+$muted-color: #bdbdbd;
+$danger-color: #e74040;
+$light-background-color: #ffffff;
+$text-color: #252b42;
+$dark-background-color: #252b42;
+$light-gray-1: #fafafa;
+$light-text-color: #ffffff;
+$alert-color: #e77c40;
+$secondary: #f3cd03;
+$secondary-color-1: #40bb15;
+
+$light-drop-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$accentued-drop-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+* {
+    font-family: $font;
+}
+h1 {
+    font-size: 58px;
+}
+p {
+    font-size: 14px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+a {
+    font-size: 14px;
+}
+small {
+    font-size: 12px;
+}
+.btn-text {
+    font-size: 14px;
+}
+
+body {
+    background-color: $dark-background-color;
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+%valign-center {
+    display: flex;
+    align-items: center;
+}
+%link {
+    color: $light-text-color;
+    font-weight: 700px;
+}
+header {
+    @extend %flex-center;
+    justify-content: space-between;
+    padding: 30px 195px;
+
+    .menu-content-wrapper {
+        @extend%valign-center;
+        gap: 83px;
+        .menu-wrapper {
+            display: flex;
+            list-style-type: none;
+
+            gap: 21px;
+            .menu-item-wrapper a {
+                text-decoration: none;
+                @extend %link;
+            }
+        }
+    }
+    .button-wrapper {
+        display: flex;
+        gap: 45px;
+
+        .btn-link {
+            @extend %link;
+            background-color: $dark-background-color;
+            border: none;
+        }
+        .btn-primary {
+            background-color: $primary-color;
+            color: $light-text-color;
+            align-items: center;
+            padding-left: 25px;
+            padding-top: 15px;
+            padding-right: 25px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            display: flex;
+            gap: 15px;
+            text-transform: uppercase;
+            font-weight: 700px;
+        }
+    }
+}
+
+.hero-wrapper {
+    .bg-wrapper {
+        background-image: url(../img/backgroundimage.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+    }
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 198px;
+
+        h5 {
+            color: $primary-color;
+        }
+
+        h1 {
+            width: 542px;
+            height: 240px;
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 80px;
+            letter-spacing: 0.2px;
+            color: $light-text-color;
+        }
+
+        h4 {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: $light-text-color;
+        }
+        .buttonst-wrapper {
+            display: flex;
+            gap: 10px;
+
+            .btn-primary {
+                background-color: $primary-color;
+                color: $light-text-color;
+                padding: 15px 40px;
+                border-radius: 5px;
+            }
+
+            .btn-link {
+                color: $primary-color;
+                padding: 15px 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.enter-about {
+    display: flex;
+    gap: 30px;
+    padding-left: 198px;
+    padding-top: 80px;
+
+    .enter-aboutdv {
+        gap: 20px;
+        width: 328px;
+        background-color: $light-background-color;
+
+        img {
+            padding-left: 40px;
+            padding-top: 35px;
+        }
+
+        h3 {
+            padding-left: 40px;
+        }
+        span {
+            color: $danger-color;
+            width: 50px;
+            height: 2px;
+            padding-left: 40px;
+        }
+        p {
+            color: $second-text-color;
+            padding-left: 40px;
+        }
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    gap: 35px;
+      .containerdv{
+padding-top: 80px;
+
+
+
+      h2{
+        color:$light-text-color
+      }
+      p{
+        color:$light-text-color
+      }
+      h6{
+        color:$primary-text-color
+      }
+      }
+}
